@@ -1,0 +1,10 @@
+<div ng-controller="SurveyController">
+	<a href="#/dashboard">Return to Dashboard</a>
+	<h3>Put the question and options here:</h3>
+	<p>Question: <input type="text" ng-model="survey.question"></p>
+	<p>Option 1: <input type="text" ng-model="survey.option1.value"></p>
+	<p>Option 2: <input type="text" ng-model="survey.option2.value"></p>
+	<p>Option 3: <input type="text" ng-model="survey.option3.value"></p>
+	<p>Option 4: <input type="text" ng-model="survey.option4.value"></p>
+	<button ng-click="create()">Create Poll</button>
+</div>

@@ -1,0 +1,23 @@
+<div ng-controller = 'SurveyController'>
+	<a href="#/dashboard">Return to Dashboard</a>
+	<h3>{{survey.question}}</h3>
+	<p>Click the Vote button to choose one.</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Current Count of Votes</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="o in survey.options ">
+				<td>{{o.value}}</td>
+				<td>{{o.vote}}</td>
+				<td><button ng-click="vote(survey._id, $index)">Vote</button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
